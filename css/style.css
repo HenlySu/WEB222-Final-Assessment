@@ -1,0 +1,243 @@
+*{
+  scroll-behavior: smooth;
+}
+
+body{
+    background-color: #1d3557;
+    display: block;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* First Part */
+.picture{
+  padding-top: 2rem;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.name{
+  text-shadow: 0 5px 5px rgb(0 0 0 / 25%), 0 -5px 5px rgb(0 0 0 / 12%),
+  0 4px 6px rgb(0 0 0 / 12%), 0 5px 7px rgb(0 0 0 / 17%);
+  color: #f1faee;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 350;
+  padding-top: 1rem;
+  margin: 0;
+}
+.description{
+  color: #f1faee;
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 3rem;
+  margin: 0;
+}
+
+/* Second Part */
+.basic-info-title{
+  font-size: 2rem;
+  font-weight: 200;
+  margin: 0;
+}
+.about{
+  display: flex;
+  align-items: flex-start;
+  padding-block: 3rem;
+  padding-inline: 2rem;
+  background-color: #a8dadc;
+  gap: 10%;
+}
+.about > div{
+  width: 50%;
+}
+.about-info{
+  display: flex;
+  gap: 10%;
+}
+.education-title{
+  padding: 0%;
+  margin: 0%;
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: #f1faee;
+}
+.education{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 2rem;
+  padding-inline: 2rem;
+  background-color: #457b9d;
+  gap: 2rem;
+}
+
+.card{
+  width: 100%;
+  display: flex;
+  height: 150px;
+  background-color: #f1faee;
+  transition: 1s;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+.card-diploma{
+  font-size: 1.1rem;
+  font-weight: 350;
+}
+
+.card-left{
+  background-color: #1d3557;
+  color: #f1faee;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 1rem;
+}
+
+.card-right{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-inline: 2rem;
+}
+
+.card-diploma-right,
+.card-school{
+  font-size: 1.2rem;
+  font-weight: 545;
+  margin-block: 0.2rem;
+}
+.card-location,
+.card-major{
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-block: 0.2rem;
+}
+
+/* Contact Section */
+.contact-title {
+  margin: 0%;
+  font-size: 3.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.contact {
+  background-color: #a8dadc;
+  padding-block: 2rem;
+  padding-inline: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  margin-block: 1rem;
+  display: flex;
+  gap: 1.8rem;
+  width: 100%;
+}
+  
+.input-field {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 0.5rem;
+}
+  
+.long {
+  width: calc(300px * 2 + 2rem);
+}
+  
+.radio-field,
+.checkbox-field {
+  display: flex;
+  gap: 2rem;
+}
+  
+.radio-option,
+.checkbox-option {
+  display: flex;
+}
+  
+input,
+textarea {
+  background-color: #f1faee;
+  width: 100%;
+  border:1px solid;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+  font-size: 0.9rem;
+}
+  
+.required-field {
+  color: red;
+}
+  
+.hidden {
+  display: none;
+}
+  
+.buttons {
+  justify-content: flex-end;
+  display: flex;
+  gap: 1rem;
+}
+  
+input[type="checkbox"] {
+  width: auto;
+}
+  
+button {
+  background-color: #457b9d;
+  color: #f1faee;
+  border: none;
+  text-align: center;
+  flex: none;
+  width: 100px;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+  
+button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #1d3557 ;
+}
+
+.follow-me{
+  color: #f1faee;
+  font-weight: 350;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.social-icon{
+  font-size: 5rem;
+  text-decoration: none;
+  color: #f1faee;
+  text-align: center;
+}
+
+.social-icon:hover{
+  transition: 1s;
+  color: #457b9d;  
+}
+
+.copy-right-info{
+  text-align: right;
+  color: #f1faee;
+}

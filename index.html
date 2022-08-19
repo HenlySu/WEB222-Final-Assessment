@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Henly Su" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="js/app.js" defer></script>
+        <title>Henly Su</title>
+    </head>
+
+    <body>
+        <header>
+            <center>
+                <img src="./pictures/Henly.jpeg" alt="Henly" class="picture">
+            </center>
+            <h1 class="name">Henly Su</h1>
+            <p class="description">An aspiring software developer</p>
+        </header>
+
+        <section class="about">
+            <div class="left-about">
+                <h3 class="basic-info-title">About me and Academic Honest</h3>
+
+                <p class="text">
+                    <br>
+                    I declare that my assessment is wholly my own work 
+                    in accordance with Seneca Academic Policy. No part of this 
+                    assessment has been copied manually or electronically from any 
+                    other source (including web sites) except for the information 
+                    supplied by the WEB222 instructors and / or made available in 
+                    this assessment for my use. I also declare that no part of this 
+                    assignment has been distributed to other students.
+                </p>
+
+                <p class="date">
+                    <br><br>
+                    Date: August 18, 2022
+                </p>
+            </div>
+            <div class="right-about">
+                <h3 class="basic-info-title">Basic Information</h3>
+                <div class="about-info">
+                    <div class="info-title">
+                        <p class="info-titles">Age:</p>
+                        <p class="info-titles">Email:</p>
+                        <p class="info-titles">language:</p>
+                        <p class="info-titles">Class Section:</p>
+                        <p class="info-titles">Student ID:</p>
+                        <p class="info-titles">Instructor:</p>
+                    </div>
+
+                    <div class="info-information">
+                        <p class="info">21</p>
+                        <p class="info">Henlysu.bz@gmail.com</p>
+                        <p class="info">Cantonese, English, Spanish</p>
+                        <p class="info">NCC</p>
+                        <p class="info">143334183</p>
+                        <p class="info">Mark Merit</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="education">
+            <h3 class="education-title">Education</h3>
+            <div class="card">
+                <div class="card-left"> 
+                    <p class="card-timeline">2014 - 2018</p>
+                    <p class="card-diploma">High School Diploma</p>
+                </div>
+                <div class="card-right">
+                    <p class="card-school">Independence High School</p>
+                    <p class="card-location">Independence Village, Stann Creek District, Belize CA</p>
+                    <p class="card-diploma-right">High School Diploma</p>
+                    <p class="card-major">Business</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-left"> 
+                    <p class="card-timeline">2019 - 2020</p>
+                    <p class="card-diploma">Junior College Diploma</p>
+                </div>
+                <div class="card-right">
+                    <p class="card-school">Independence Junior School</p>
+                    <p class="card-location">Independence Village, Stann Creek District, Belize CA</p>
+                    <p class="card-diploma-right">Junior College Diploma</p>
+                    <p class="card-major">Information Technology</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-left"> 
+                    <p class="card-timeline">2021 - 2024</p>
+                    <p class="card-diploma">Advance Diploma</p>
+                </div>
+                <div class="card-right">
+                    <p class="card-school">Seneca College</p>
+                    <p class="card-location">Toronto, Ontario, Canada</p>
+                    <p class="card-diploma-right">Advance Diploma</p>
+                    <p class="card-major">Computer Programming and Analysis</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h3 class="contact-title">Contact Me</h3>
+            <form class="contact-form" action="https://httpbin.org/post" method="post">
+                <div class="row">
+                <div class="input-field">
+                    <label for="name">Name<span class="required-field">*</span></label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="input-field">
+                    <label for="email">Email<span class="required-field">*</span></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field long">
+                    <label for="address">Street Address<span class="required-field">*</span></label>
+                    <input type="text" name="address" id="address" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field">
+                    <label for="city">City<span class="required-field">*</span></label>
+                    <input list="cities-choices" id="city" name="city">
+                    <datalist id="cities-choices">
+                        <option value="Toronto">
+                        <option value="Montreal">
+                        <option value="Vancouver">
+                        <option value="Calgary">
+                        <option value="Quebec">
+                    </datalist>
+                </div>
+                <div class="input-field">
+                    <label for="postal">Postal Code<span class="required-field">*</span></label>
+                    <input type="text" name="postal" id="postal" placeholder="A1A 1A1" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="radio-field">
+                    <div class="radio-option">
+                        <input type="radio" name="query" id="question" checked>
+                        <label for="question">Question</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="query" id="comment">
+                        <label for="comment">Comment</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="query" id="hiring">
+                        <label for="hiring">Hiring</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row hidden hourly">
+                <div class="input-field">
+                    <label for="rate">Hourly Rate</label>
+                    <input type="number" name="rate" id="rate">
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field long">
+                    <label for="message">Message<span class="required-field">*</span></label>
+                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="reset">Clear</button>
+                <button type="submit" value="submit">Submit</button>
+            </div>
+        </form>
+        </section>
+    </body>
+
+    <footer>
+
+        <h3 class="follow-me">Follow me on</h3>
+        <center>
+            <a class="social-icon" href="https://www.facebook.com/profile.php?id=100007566632609" target="_blank">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a class="social-icon" href="https://www.instagram.com/henly._.su/" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a class="social-icon" href="https://twitter.com/su_henly" target="_blank">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a class="social-icon" href="https://www.linkedin.com/in/henly-su-823500186/" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+        </center>
+
+        <p class="copy-right-info">Copyright ⓒ 2022 Henly. All Rights Reserved</p>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </footer>
+
+</html>
